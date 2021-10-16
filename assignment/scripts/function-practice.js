@@ -195,3 +195,5 @@ console.log(sumOfCubes([-1,-2,-3]));
 console.log(sumOfCubes([-1,2,3]));
 console.log(sumOfCubes([1,-2,3]));
 console.log(sumOfCubes([1,2,-3]));
+
+// ready for submission

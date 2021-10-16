@@ -30,6 +30,7 @@ function addNumbers( firstNumber, secondNumber ) {
 // call the function to test
 console.log(addNumbers( 3245, 33246 ));
 
+
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( num1, num2, num3 ){
   return num1 * num2 * num3;
@@ -37,6 +38,7 @@ function multiplyThree( num1, num2, num3 ){
 
 // call the function to test
 console.log(multiplyThree( 4, 2, 5));
+
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
@@ -68,8 +70,21 @@ function getLast( array ) {
    }
 }
 
-//call the function to test
+//call the function to test an array with numbers
 console.log(getLast([1,2,3,4,5]));
+//call the function to test an array with strings
+console.log(getLast(['apples', 'oranges', 'bananas', 'kiwis']));
+//call the function to test an array with multiple booleans
+console.log(getLast([true, true, false, false]));
+//call the function to test an array that has one number
+console.log(getLast([1]));
+//call the function to test an array that has one string
+console.log(getLast(['apples']));
+//call the function to test an array that has one boolean
+console.log(getLast([true]));
+//call the function to test an empty array to return 'undefined'
+console.log(getLast([]));
+
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
@@ -83,7 +98,9 @@ function find( value, array ){
   return false;
 }
 
-//call the function to test
+//call the function to test if a value is in the array
+console.log(find(5,[6,4,6,5,4]));
+//call the function to test if a value is NOT in the array
 console.log(find(10,[5,4,3,2,5,3]));
 
 
@@ -105,6 +122,7 @@ return false;
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
+
 // 9. Function to return the sum of all numbers in an array
 function sumAll( array ) {
   let sum = 0
@@ -117,6 +135,16 @@ function sumAll( array ) {
 
 //call the function to test
 console.log(sumAll([1,2,3,4,5,6,7]));
+console.log(sumAll([-1,-2,-3,-4,-5,-6,-7]));
+console.log(sumAll([]));
+console.log(sumAll([10,0,0,0,0,0,0]));
+console.log(sumAll([0,10,0,0,0,0,0]));
+console.log(sumAll([0,0,10,0,0,0,0]));
+console.log(sumAll([0,0,0,10,0,0,0]));
+console.log(sumAll([0,0,0,0,10,0,0]));
+console.log(sumAll([0,0,0,0,0,10,0]));
+console.log(sumAll([0,0,0,0,0,0,10]));
+
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
@@ -133,8 +161,16 @@ function positiveArray(array){
 }
 
 //call the function to test
-console.log(positiveArray([3,-2,-1,0,4,6]));
-
+console.log(positiveArray([1,2,3,4,5,6]));
+console.log(positiveArray([3,-2,-1,0,4,5]));
+console.log(positiveArray([-1,-2,-3,1,2,3]));
+console.log(positiveArray([0,0,0,4,5,6]));
+console.log(positiveArray([-1,-2,-3,-4,-5,-6]));
+console.log(positiveArray([0,-1,-2,-3,-4,-5,-6]));
+console.log(positiveArray([0,0,0,0,0,0]));
+console.log(positiveArray([1,2,3,0,0,0]));
+console.log(positiveArray([1,2,3,0,0,0,-1,-2,-3]));
+console.log(positiveArray([1,2,3,-1,-2,-3]));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
@@ -154,4 +190,8 @@ function sumOfCubes(array){
 }
 
 //call the function to test
-console.log(sumOfCubes([1,5,9]));
+console.log(sumOfCubes([1,2,3]));
+console.log(sumOfCubes([-1,-2,-3]));
+console.log(sumOfCubes([-1,2,3]));
+console.log(sumOfCubes([1,-2,3]));
+console.log(sumOfCubes([1,2,-3]));
